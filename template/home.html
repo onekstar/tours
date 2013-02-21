@@ -1,5 +1,37 @@
 {% extends "base.html" %}
 {% block title %}Home Page{% end %}
-{% block body %} 
-    this is the home page
+{% block content %} 
+<div id="site_content">
+    <div id="sidebar_container">
+        <div class="sidebar">
+            <h1>Latest News</h1>
+            <h2>New Website Launched</h2>
+            <p>We've redesigned our own website. Take a look around and let us know what you think.</p>
+        </div>
+        <div class="sidebar">
+            <h1>Special Offers</h1>
+            <h2>10% Discount</h2>
+            <p>For the month of February 2012, we are offering a 10% discount for all new visitors.</p>
+        </div>
+        <div class="sidebar">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Call us, <a href="#">email us</a> or complete our <a href="contact.php">contact form</a>.</p>
+        </div>
+    </div>
+    <div id="content">
+        <ul class="slideshow">
+            <li class="show"><img width="706" height="316" src="{{ static_url('images/1.jpg') }}" alt="image one" /></li>
+            <li><img width="706" height="316" src="{{ static_url('images/2.jpg') }}" alt="image two" /></li>
+            <li><img width="706" height="316" src="{{ static_url('images/3.jpg') }}" alt="image three" /></li>
+            <li><img width="706" height="316" src="{{ static_url('images/4.jpg') }}" alt="image four" /></li>
+            <li><img width="706" height="316" src="{{ static_url('images/5.jpg') }}" alt="image five" /></li>
+        </ul>
+        <div id="content_item">
+            <h1>Welcome to CSS3_design_one</h1>
+            <p>This simple, fixed width website template is released under a <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Licence</a>. This means you are free to download and use it for personal and commercial projects. However, you <strong>must leave the 'design from css3templates.co.uk' link in the footer of the template</strong>. This template is written entirely in <strong>HTML5</strong> and <strong>CSS3</strong>.</p>
+            <p>You can view more free CSS3 web templates <a href="http://www.css3templates.co.uk">here</a>. This template is a fully documented 5 page website, with an <a href="examples.html">examples</a> page that gives examples of all the styles available with this design. There is also a working PHP contact form on the contact page.</p>
+        </div>
+    </div>
+</div>
+
 {% end %}
